@@ -66,7 +66,7 @@
             background-color: #e8f8f5;
             border-left: 5px solid #1abc9c;
             border-radius: 4px;
-            display: none; /* Nascosto di default */
+            display: none;
         }
         .result-box h3 {
             margin-top: 0;
@@ -83,19 +83,19 @@
 <body>
 
 <div class="container">
-    <h2>Convertitore Coordinate</h2>
+    <h2>Convertitore Nord Italia</h2>
     
     <div class="form-group">
         <label for="zonaWGS84">Fuso di Origine (UTM WGS84):</label>
         <select id="zonaWGS84">
-            <option value="EPSG:32632">Zona 32N (Italia Ovest/Centro)</option>
-            <option value="EPSG:32633">Zona 33N (Italia Est/Sud)</option>
+            <option value="EPSG:32632" selected>Zona 32T (Nord-Ovest Italia)</option>
+            <option value="EPSG:32633">Zona 33T (Nord-Est Italia)</option>
         </select>
     </div>
 
     <div class="form-group">
         <label for="estWGS84">Coordinata Est (X) in metri:</label>
-        <input type="number" id="estWGS84" placeholder="Es. 600000.00" step="any" required>
+        <input type="number" id="estWGS84" placeholder="Es. 400000.00" step="any" required>
     </div>
 
     <div class="form-group">
@@ -106,8 +106,8 @@
     <div class="form-group">
         <label for="fusoRoma40">Fuso di Destinazione (Gauss-Boaga):</label>
         <select id="fusoRoma40">
-            <option value="EPSG:3003">Fuso Ovest (EPSG: 3003)</option>
-            <option value="EPSG:3004">Fuso Est (EPSG: 3004)</option>
+            <option value="EPSG:3003" selected>Fuso Ovest - EPSG: 3003</option>
+            <option value="EPSG:3004">Fuso Est - EPSG: 3004</option>
         </select>
     </div>
 
@@ -120,46 +120,37 @@
     </div>
 
     <p class="warning">
-        <strong>Nota sulla precisione:</strong> Questa conversione utilizza i 7 parametri standard (Bursa-Wolf) medi per la penisola italiana. Come tutte le conversioni puramente matematiche che non usano i grigliati locali IGM, l'accuratezza finale ha una tolleranza di circa 1-4 metri rispetto al dato catastale reale.
+        <strong>Nota:</strong> EPSG:32632 copre l'intera zona 32 dell'emisfero Nord (inclusa la fascia T). La conversione usa i 7 parametri di Helmert. Tolleranza attesa: 1-4 metri rispetto ai rigidi confini catastali.
     </p>
 </div>
 
 <script>
-    // 1. Definiamo i Sistemi di Riferimento usando le stringhe PROJ4
-
-    // UTM WGS84 (Zone 32N e 33N)
+    // Definiamo i Sistemi di Riferimento (EPSG:32632 corrisponde alla Zona 32 emisfero Nord, inclusa la fascia T)
     proj4.defs("EPSG:32632", "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs");
     proj4.defs("EPSG:32633", "+proj=utm +zone=33 +datum=WGS84 +units=m +no_defs");
 
-    // Roma 1940 / Gauss-Boaga (Fuso Ovest ed Est)
-    // Usiamo i 7 parametri di trasformazione medi (towgs84) per la penisola italiana
+    // Gauss-Boaga Roma 1940 (Ovest ed Est)
     proj4.defs("EPSG:3003", "+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs");
     proj4.defs("EPSG:3004", "+proj=tmerc +lat_0=0 +lon_0=15 +k=0.9996 +x_0=2520000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs");
 
-    // 2. Funzione di conversione eseguita al click del bottone
     function convertiCoordinate() {
-        // Recuperiamo i valori inseriti dall'utente
         const est = parseFloat(document.getElementById('estWGS84').value);
         const nord = parseFloat(document.getElementById('nordWGS84').value);
         
         const epsgOrigine = document.getElementById('zonaWGS84').value;
         const epsgDestinazione = document.getElementById('fusoRoma40').value;
 
-        // Controllo validità input
         if (isNaN(est) || isNaN(nord)) {
             alert("Per favore, inserisci valori numerici validi per le coordinate.");
             return;
         }
 
         try {
-            // Eseguiamo la conversione con Proj4js
             const coordConvertite = proj4(epsgOrigine, epsgDestinazione, [est, nord]);
 
-            // Mostriamo i risultati arrotondati a 3 decimali (millimetri)
             document.getElementById('outEst').innerText = coordConvertite[0].toFixed(3) + " m";
             document.getElementById('outNord').innerText = coordConvertite[1].toFixed(3) + " m";
             
-            // Rendiamo visibile il box dei risultati
             document.getElementById('risultato').style.display = 'block';
         } catch (error) {
             alert("Si è verificato un errore nella conversione.");
