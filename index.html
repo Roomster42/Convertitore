@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertitore Coordinate | WGS84 ⟷ Roma 1940</title>
+    <title>Convertitore Coordinate | WGS84 ⟷ Roma 1940 (Uso Locale)</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.0/proj4.js"></script>
     <style>
         body {
@@ -31,6 +31,7 @@
             margin-top: 0;
             border-bottom: 2px solid #ecf0f1;
             padding-bottom: 10px;
+            font-size: 1.5em;
         }
         .form-group {
             margin-bottom: 15px;
@@ -85,6 +86,7 @@
         .result-box h3 {
             margin-top: 0;
             color: #16a085;
+            font-size: 1.2em;
         }
         .result-box.reverse h3 {
             color: #2980b9;
@@ -100,7 +102,7 @@
 <body>
 
 <div class="container">
-    <h2>UTM WGS84 ➔ Roma 1940</h2>
+    <h2>UTM WGS84 ➔ Roma 1940<br><small style="font-size: 0.6em; color: #7f8c8d;">(Senza prefisso fuso)</small></h2>
     
     <div class="form-group">
         <label for="zonaWGS84">Fuso di Origine (UTM WGS84):</label>
@@ -112,7 +114,7 @@
 
     <div class="form-group">
         <label for="estWGS84">Coordinata Est (X) in metri:</label>
-        <input type="number" id="estWGS84" placeholder="Es. 400000.00" step="any">
+        <input type="number" id="estWGS84" placeholder="Es. 450000.00" step="any">
     </div>
 
     <div class="form-group">
@@ -123,8 +125,8 @@
     <div class="form-group">
         <label for="fusoRoma40">Fuso di Destinazione (Gauss-Boaga):</label>
         <select id="fusoRoma40">
-            <option value="EPSG:3003" selected>Fuso Ovest - EPSG: 3003</option>
-            <option value="EPSG:3004">Fuso Est - EPSG: 3004</option>
+            <option value="ROMA40_OVEST_LOCALE" selected>Fuso Ovest (Falso Est 500km)</option>
+            <option value="ROMA40_EST_LOCALE">Fuso Est (Falso Est 520km)</option>
         </select>
     </div>
 
@@ -138,19 +140,19 @@
 </div>
 
 <div class="container">
-    <h2>Roma 1940 ➔ UTM WGS84</h2>
+    <h2>Roma 1940 ➔ UTM WGS84<br><small style="font-size: 0.6em; color: #7f8c8d;">(Senza prefisso fuso)</small></h2>
     
     <div class="form-group">
         <label for="fusoRoma40_inv">Fuso di Origine (Gauss-Boaga):</label>
         <select id="fusoRoma40_inv">
-            <option value="EPSG:3003" selected>Fuso Ovest - EPSG: 3003</option>
-            <option value="EPSG:3004">Fuso Est - EPSG: 3004</option>
+            <option value="ROMA40_OVEST_LOCALE" selected>Fuso Ovest (Falso Est 500km)</option>
+            <option value="ROMA40_EST_LOCALE">Fuso Est (Falso Est 520km)</option>
         </select>
     </div>
 
     <div class="form-group">
         <label for="estRoma40">Coordinata Est (X) in metri:</label>
-        <input type="number" id="estRoma40" placeholder="Es. 1500000.00" step="any">
+        <input type="number" id="estRoma40" placeholder="Es. 450000.00 (senza 1 o 2 iniziale)" step="any">
     </div>
 
     <div class="form-group">
@@ -175,19 +177,21 @@
     </div>
     
     <p class="warning">
-        <strong>Nota:</strong> Entrambe le conversioni utilizzano i 7 parametri di Helmert. La tolleranza attesa è di 1-4 metri rispetto al dato di altissima precisione (Grigliati IGM).
+        <strong>Nota tecnica:</strong> Questo strumento utilizza definizioni PROJ4 modificate in cui il Falso Est del sistema Gauss-Boaga è stato decurtato del prefisso di fuso (1.000.000 per l'Ovest e 2.000.000 per l'Est) per allinearsi all'uso dei software catastali locali.
     </p>
 </div>
 
 <script>
-    // 1. Definiamo i Sistemi di Riferimento 
+    // Definizioni UTM WGS84
     proj4.defs("EPSG:32632", "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs");
     proj4.defs("EPSG:32633", "+proj=utm +zone=33 +datum=WGS84 +units=m +no_defs");
 
-    proj4.defs("EPSG:3003", "+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=1500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs");
-    proj4.defs("EPSG:3004", "+proj=tmerc +lat_0=0 +lon_0=15 +k=0.9996 +x_0=2520000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs");
+    // Definizioni Gauss-Boaga LOCALI (x_0 modificato per rimuovere il prefisso)
+    // Fuso Ovest: x_0 era 1500000 -> ora è 500000
+    proj4.defs("ROMA40_OVEST_LOCALE", "+proj=tmerc +lat_0=0 +lon_0=9 +k=0.9996 +x_0=500000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs");
+    // Fuso Est: x_0 era 2520000 -> ora è 520000
+    proj4.defs("ROMA40_EST_LOCALE", "+proj=tmerc +lat_0=0 +lon_0=15 +k=0.9996 +x_0=520000 +y_0=0 +ellps=intl +towgs84=-104.1,-49.1,-9.9,0.971,-2.917,0.714,-11.68 +units=m +no_defs");
 
-    // 2. Funzione: WGS84 -> Roma 1940
     function convertiInRoma40() {
         const est = parseFloat(document.getElementById('estWGS84').value);
         const nord = parseFloat(document.getElementById('nordWGS84').value);
@@ -210,7 +214,6 @@
         }
     }
 
-    // 3. Funzione: Roma 1940 -> WGS84
     function convertiInWGS84() {
         const est = parseFloat(document.getElementById('estRoma40').value);
         const nord = parseFloat(document.getElementById('nordRoma40').value);
@@ -223,7 +226,6 @@
         }
 
         try {
-            // Proj4 inverte automaticamente i parametri matematici
             const coord = proj4(epsgOrigine, epsgDestinazione, [est, nord]);
             document.getElementById('outEstWGS84').innerText = coord[0].toFixed(3) + " m";
             document.getElementById('outNordWGS84').innerText = coord[1].toFixed(3) + " m";
