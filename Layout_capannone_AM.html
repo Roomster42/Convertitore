@@ -103,14 +103,14 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
   <header>
     <div>
       <h1>Capannone additive manufacturing · proposta di layout</h1>
-      <p class="lede">Pianta di concetto in scala, revisione B. Due corsie muletti a T portano a ogni sala macchine: la corsia principale dal portone e una trasversale su cui si affacciano FDM, SLA e SLS con portoni da 2,5–3 m e una zona di posa libera all'interno.</p>
+      <p class="lede">Pianta di concetto in scala, revisione C. Tutte le lavorazioni stanno a piano terra. Il muletto lavora solo sulla corsia principale; FDM, SLA e lavaggio si servono con il transpallet da una corsia trasversale. Il soppalco ospita solo magazzino e mensa.</p>
     </div>
     <div class="cartiglio">
       <span>Edificio</span><span>22,90 × ≈22,20 m</span>
       <span>Netto interno</span><span>≈ 490 m²</span>
       <span>H utile</span><span>7,00 m</span>
-      <span>Soppalco</span><span>+3,30 · 86 m²</span>
-      <span>Rev.</span><span>B · 15/10/2026</span>
+      <span>Soppalco</span><span>+3,30 · 135 m²</span>
+      <span>Rev.</span><span>C · 15/10/2026</span>
     </div>
   </header>
 
@@ -155,50 +155,54 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
 <rect class="exist" x="2950" y="1276" width="170" height="1000"/><text class="ext-s" x="3035" y="1780" font-size="18" transform="rotate(-90 3035 1780)">struttura esistente (da verificare)</text>
 <rect class="wall" x="0" y="0" width="2290" height="2220"/><rect class="inside" x="20" y="20" width="2250" height="2180"/>
 <rect class="corr" x="320" y="1070" width="150" height="800"/>
-<rect class="aisle" x="1270" y="710" width="390" height="1490"/>
-<rect class="aisle" x="270" y="710" width="1000" height="360"/>
-<rect style="fill:var(--aisle)" x="1250" y="720" width="40" height="340"/>
-<rect class="room" x="20" y="20" width="560" height="690" style="fill:var(--c-clima)"/>
-<text class="rn" x="305" y="480" font-size="30">Sala FDM</text>
-<text class="rs" x="305" y="512" font-size="19">clima</text>
-<text class="ra" x="305" y="538" font-size="20">38,6 m²</text>
-<rect class="room" x="580" y="20" width="690" height="690" style="fill:var(--c-clima)"/>
-<text class="rn" x="900" y="480" font-size="30">Sala SLA</text>
-<text class="rs" x="900" y="512" font-size="19">clima 20–23 °C · UR ≤50%</text>
-<text class="ra" x="900" y="538" font-size="20">47,6 m²</text>
-<rect class="room" x="1270" y="20" width="1000" height="690" style="fill:var(--c-clima)"/>
-<text class="rn" x="1520" y="460" font-size="30">Sala SLS</text>
-<text class="rs" x="1520" y="492" font-size="19">clima · N₂ · doppia altezza</text>
-<text class="ra" x="1520" y="518" font-size="20">69,0 m²</text>
-<rect class="room" x="870" y="1070" width="400" height="350" style="fill:var(--c-clima)"/>
-<text class="rn" x="1060" y="1225" font-size="30">Lavaggio SLA</text>
-<text class="rs" x="1060" y="1257" font-size="19">IPA · UV</text>
-<text class="ra" x="1060" y="1283" font-size="20">14,0 m²</text>
-<rect class="room" x="1660" y="710" width="610" height="500" style="fill:var(--c-clima)"/>
-<text class="rn" x="1870" y="890" font-size="30">Pulizia SLS</text>
-<text class="rs" x="1870" y="922" font-size="19">depolveratura · PMS · polveri</text>
-<text class="ra" x="1870" y="948" font-size="20">30,5 m²</text>
-<rect class="room" x="1660" y="1210" width="610" height="400" style="fill:var(--c-proc)"/>
-<text class="rn" x="1965" y="1480" font-size="30">Buratto · soda · vapor</text>
-<text class="rs" x="1965" y="1512" font-size="19">post-processo umido</text>
-<text class="ra" x="1965" y="1538" font-size="20">24,4 m²</text>
-<rect class="room" x="1660" y="1610" width="610" height="590" style="fill:var(--c-proc)"/>
-<text class="rn" x="1795" y="2040" font-size="30">Verniciatura</text>
-<text class="rs" x="1795" y="2072" font-size="19">cabina + forno · REI</text>
-<text class="ra" x="1795" y="2098" font-size="20">36,0 m²</text>
-<rect class="room" x="870" y="1420" width="400" height="480" style="fill:var(--c-log)"/>
-<text class="rn" x="1050" y="1650" font-size="30">Magazzino</text>
-<text class="rs" x="1050" y="1682" font-size="19">porta-pallet h 6 m</text>
-<text class="ra" x="1050" y="1708" font-size="20">19,2 m²</text>
-<rect class="room" x="870" y="1900" width="400" height="300" style="fill:var(--c-log)"/>
-<text class="rn" x="1070.0" y="2050.0" font-size="30">Imballo e spedizioni</text>
-<text class="ra" x="1070.0" y="2076.0" font-size="20">12,0 m²</text>
+<rect class="aisle" x="1310" y="710" width="350" height="1490"/>
+<rect class="aisle" x="270" y="820" width="1040" height="250"/>
+<rect style="fill:var(--aisle)" x="1290" y="830" width="40" height="230"/>
+<rect class="room" x="20" y="20" width="560" height="800" style="fill:var(--c-clima)"/>
+<text class="rn" x="305" y="530" font-size="30">Sala FDM</text>
+<text class="rs" x="305" y="562" font-size="19">clima</text>
+<text class="ra" x="305" y="588" font-size="20">44,8 m²</text>
+<rect class="room" x="580" y="20" width="520" height="800" style="fill:var(--c-clima)"/>
+<text class="rn" x="875" y="550" font-size="30">Sala SLA</text>
+<text class="rs" x="875" y="582" font-size="19">clima 20–23 °C · UR ≤50%</text>
+<text class="ra" x="875" y="608" font-size="20">41,6 m²</text>
+<rect class="room" x="1100" y="20" width="210" height="800" style="fill:var(--c-clima)"/>
+<text class="rn" x="1205" y="700" font-size="24">Lavaggio SLA</text>
+<text class="rs" x="1205" y="732" font-size="19">IPA · UV</text>
+<text class="ra" x="1205" y="758" font-size="20">16,8 m²</text>
+<rect class="room" x="1310" y="20" width="960" height="690" style="fill:var(--c-clima)"/>
+<text class="rn" x="1540" y="460" font-size="30">Sala SLS</text>
+<text class="rs" x="1540" y="492" font-size="19">clima · N₂ · doppia altezza</text>
+<text class="ra" x="1540" y="518" font-size="20">66,2 m²</text>
+<rect class="room" x="1660" y="710" width="610" height="460" style="fill:var(--c-clima)"/>
+<text class="rn" x="1870" y="870" font-size="30">Pulizia SLS</text>
+<text class="rs" x="1870" y="902" font-size="19">depolveratura · PMS · polveri</text>
+<text class="ra" x="1870" y="928" font-size="20">28,1 m²</text>
+<rect class="room" x="1660" y="1170" width="610" height="350" style="fill:var(--c-proc)"/>
+<text class="rn" x="1965" y="1430" font-size="30">Buratto · soda · vapor</text>
+<text class="rs" x="1965" y="1462" font-size="19">post-processo umido</text>
+<text class="ra" x="1965" y="1488" font-size="20">21,4 m²</text>
+<rect class="room" x="1660" y="1520" width="610" height="220" style="fill:var(--c-proc)"/>
+<text class="rn" x="1965" y="1692" font-size="24">Area VC</text>
+<text class="ra" x="1965" y="1718" font-size="20">13,4 m²</text>
+<rect class="room" x="1660" y="1740" width="610" height="460" style="fill:var(--c-proc)"/>
+<text class="rn" x="1795" y="2070" font-size="30">Verniciatura</text>
+<text class="rs" x="1795" y="2102" font-size="19">cabina + forno · REI</text>
+<text class="ra" x="1795" y="2128" font-size="20">28,1 m²</text>
+<rect class="room" x="870" y="1070" width="440" height="830" style="fill:var(--c-fin)"/>
+<text class="rn" x="1140" y="1460" font-size="30">Finitura</text>
+<text class="rs" x="1140" y="1492" font-size="19">e assemblaggio · banchi aspirati</text>
+<text class="ra" x="1140" y="1518" font-size="20">36,5 m²</text>
+<rect class="room" x="870" y="1900" width="440" height="300" style="fill:var(--c-log)"/>
+<text class="rn" x="1090.0" y="2050.0" font-size="30">Imballo e spedizioni</text>
+<text class="ra" x="1090.0" y="2076.0" font-size="20">13,2 m²</text>
 <rect class="room" x="20" y="1070" width="300" height="400" style="fill:var(--c-serv)"/>
 <text class="rn" x="170.0" y="1270.0" font-size="30">Spogliatoio</text>
 <text class="ra" x="170.0" y="1296.0" font-size="20">12,0 m²</text>
-<rect class="room" x="20" y="1470" width="300" height="400" style="fill:var(--c-serv)"/>
-<text class="rn" x="170.0" y="1670.0" font-size="30">Mensa / relax</text>
-<text class="ra" x="170.0" y="1696.0" font-size="20">12,0 m²</text>
+<rect class="room" x="20" y="1470" width="300" height="400" style="fill:var(--c-fin)"/>
+<text class="rn" x="170.0" y="1660.0" font-size="30">Qualità</text>
+<text class="rs" x="170.0" y="1692.0" font-size="19">metrologia · collaudo</text>
+<text class="ra" x="170.0" y="1718.0" font-size="20">12,0 m²</text>
 <rect class="room" x="470" y="1070" width="400" height="330" style="fill:var(--c-serv)"/>
 <text class="rn" x="670.0" y="1225.0" font-size="30">Bagno operai</text>
 <text class="rs" x="670.0" y="1257.0" font-size="19">2 WC · 2 docce</text>
@@ -218,28 +222,35 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
 <text class="rn" x="670.0" y="2040.0" font-size="30">Locale tecnico</text>
 <text class="rs" x="670.0" y="2072.0" font-size="19">QE · server · batterie FV · REI</text>
 <text class="ra" x="670.0" y="2098.0" font-size="20">12,0 m²</text>
-<rect class="zone" x="140" y="160" width="330" height="550"/>
-<rect class="zone" x="620" y="280" width="560" height="430"/>
-<rect class="zone" x="1320" y="360" width="400" height="350"/>
-<rect class="mach" x="1340" y="100" width="150" height="247"/><text class="ml" x="1415.0" y="228.5" font-size="17">HT403P</text>
-<rect class="mach" x="1498" y="120" width="48" height="88"/>
+<rect class="zone" x="140" y="160" width="330" height="660"/>
+<rect class="zone" x="670" y="280" width="410" height="540"/>
+<rect class="zone" x="1340" y="360" width="400" height="350"/>
+<rect class="mach" x="1360" y="100" width="150" height="247"/><text class="ml" x="1435.0" y="228.5" font-size="17">HT403P</text>
+<rect class="mach" x="1518" y="120" width="48" height="88"/>
 <rect class="mach" x="1660" y="100" width="150" height="247"/><text class="ml" x="1735.0" y="228.5" font-size="17">HT403P</text>
 <rect class="mach" x="1818" y="120" width="48" height="88"/>
-<rect class="mach" x="1980" y="100" width="150" height="247"/><text class="ml" x="2055.0" y="228.5" font-size="17">HT403P</text>
-<rect class="mach" x="2138" y="120" width="48" height="88"/>
+<rect class="mach" x="1960" y="100" width="150" height="247"/><text class="ml" x="2035.0" y="228.5" font-size="17">HT403P</text>
+<rect class="mach" x="2118" y="120" width="48" height="88"/>
 <rect class="mach" x="1780" y="550" width="155" height="106"/><text class="ml" x="1857.5" y="608.0" font-size="17">P1000</text>
 <rect class="mach" x="2010" y="550" width="155" height="106"/><text class="ml" x="2087.5" y="608.0" font-size="17">P1000</text>
-<rect class="mach" x="2079" y="770" width="161" height="325"/><text class="ml" x="2159.5" y="937.5" font-size="17">PMS</text>
-<rect class="mach" x="1700" y="1060" width="140" height="110"/><text class="ml" x="1770.0" y="1120.0" font-size="17">sabbiat.</text>
-<rect class="mach" x="1700" y="1260" width="120" height="120"/><text class="ml" x="1760.0" y="1325.0" font-size="17">buratto</text>
-<rect class="mach" x="1870" y="1260" width="150" height="80"/><text class="ml" x="1945.0" y="1305.0" font-size="15">soda</text>
-<rect class="mach" x="2060" y="1260" width="170" height="110"/><text class="ml" x="2145.0" y="1320.0" font-size="17">vapor</text>
-<rect class="mach" x="1930" y="1690" width="310" height="420"/><text class="ml" x="2085.0" y="1905.0" font-size="17">cabina</text>
-<rect class="mach" x="1700" y="1690" width="150" height="200"/><text class="ml" x="1775.0" y="1795.0" font-size="17">forno</text>
+<rect class="mach" x="2079" y="740" width="161" height="325"/><text class="ml" x="2159.5" y="907.5" font-size="17">PMS</text>
+<rect class="mach" x="1700" y="1020" width="140" height="110"/><text class="ml" x="1770.0" y="1080.0" font-size="17">sabbiat.</text>
+<rect class="mach" x="1700" y="1210" width="120" height="120"/><text class="ml" x="1760.0" y="1275.0" font-size="17">buratto</text>
+<rect class="mach" x="1870" y="1210" width="150" height="80"/><text class="ml" x="1945.0" y="1255.0" font-size="15">soda</text>
+<rect class="mach" x="2060" y="1210" width="170" height="110"/><text class="ml" x="2145.0" y="1270.0" font-size="17">vapor</text>
+<rect class="mach" x="1700" y="1550" width="120" height="100"/><text class="ml" x="1760.0" y="1605.0" font-size="17">VC</text>
+<rect class="mach" x="1850" y="1550" width="100" height="100"/><text class="ml" x="1900.0" y="1605.0" font-size="17">forno</text>
+<rect class="mach" x="1980" y="1550" width="260" height="80"/><text class="ml" x="2110.0" y="1595.0" font-size="15">banco miscelaz.</text>
+<rect class="mach" x="1930" y="1760" width="310" height="420"/><text class="ml" x="2085.0" y="1975.0" font-size="17">cabina</text>
+<rect class="mach" x="1700" y="1760" width="150" height="200"/><text class="ml" x="1775.0" y="1865.0" font-size="17">forno</text>
 <rect class="mach" x="620" y="60" width="135" height="163"/><text class="ml" x="687.5" y="146.5" font-size="17">Neo800</text>
-<rect class="mach" x="820" y="60" width="102" height="168"/><text class="ml" x="871.0" y="149.0" font-size="17" transform="rotate(-90 871.0 144.0)">Viper</text>
-<rect class="mach" x="1020" y="60" width="126" height="86"/><text class="ml" x="1083.0" y="108.0" font-size="15">3500</text>
-<rect class="mach" x="1190" y="280" width="70" height="170"/><text class="ml" x="1225.0" y="370.0" font-size="15" transform="rotate(-90 1225.0 365.0)">Form4</text>
+<rect class="mach" x="810" y="60" width="102" height="168"/><text class="ml" x="861.0" y="149.0" font-size="17" transform="rotate(-90 861.0 144.0)">Viper</text>
+<rect class="mach" x="970" y="60" width="126" height="86"/><text class="ml" x="1033.0" y="108.0" font-size="15">3500</text>
+<rect class="mach" x="590" y="320" width="70" height="170"/><text class="ml" x="625.0" y="410.0" font-size="15" transform="rotate(-90 625.0 405.0)">Form4</text>
+<rect class="mach" x="1220" y="60" width="80" height="160"/><text class="ml" x="1260.0" y="145.0" font-size="15" transform="rotate(-90 1260.0 140.0)">vasche IPA</text>
+<rect class="mach" x="1220" y="250" width="80" height="110"/><text class="ml" x="1260.0" y="310.0" font-size="15">Wash/Cure</text>
+<rect class="mach" x="1220" y="390" width="80" height="90"/><text class="ml" x="1260.0" y="440.0" font-size="15">UV</text>
+<rect class="mach" x="1220" y="510" width="80" height="120"/><text class="ml" x="1260.0" y="575.0" font-size="15">EN14470</text>
 <rect class="mach" x="50" y="50" width="94" height="78"/><text class="ml" x="97.0" y="94.0" font-size="15">A2</text>
 <rect class="mach" x="184" y="50" width="94" height="78"/><text class="ml" x="231.0" y="94.0" font-size="15">A2</text>
 <rect class="mach" x="318" y="50" width="94" height="78"/><text class="ml" x="365.0" y="94.0" font-size="15">A2</text>
@@ -248,59 +259,52 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
 <rect class="mach" x="480" y="220" width="90" height="128"/><text class="ml" x="525.0" y="289.0" font-size="17">F400</text>
 <rect class="mach" x="480" y="390" width="90" height="130"/><text class="ml" x="525.0" y="460.0" font-size="17">F450</text>
 <rect class="mach" x="50" y="350" width="75" height="300"/><text class="ml" x="87.5" y="505.0" font-size="15" transform="rotate(-90 87.5 500.0)">banco 2 piani A4·H2D</text>
-<rect class="mach" x="890" y="1140" width="60" height="120"/><text class="ml" x="920.0" y="1205.0" font-size="15" transform="rotate(-90 920.0 1200.0)">EN14470</text>
-<rect class="mach" x="900" y="1330" width="150" height="70"/><text class="ml" x="975.0" y="1370.0" font-size="15">vasche IPA</text>
-<rect class="mach" x="1070" y="1330" width="110" height="70"/><text class="ml" x="1125.0" y="1370.0" font-size="15">Wash/Cure</text>
-<rect class="mach" x="1170" y="1170" width="90" height="100"/><text class="ml" x="1215.0" y="1225.0" font-size="17">UV</text>
-<rect class="mach" x="880" y="1430" width="60" height="460"/>
-<rect class="mach" x="1160" y="1440" width="110" height="440"/><text class="ml" x="1215.0" y="1665.0" font-size="17" transform="rotate(-90 1215.0 1660.0)">porta-pallet</text>
+<rect class="mach" x="890" y="1100" width="80" height="340"/><text class="ml" x="930.0" y="1275.0" font-size="15" transform="rotate(-90 930.0 1270.0)">banchi aspirati</text>
+<rect class="mach" x="890" y="1490" width="80" height="340"/><text class="ml" x="930.0" y="1665.0" font-size="15" transform="rotate(-90 930.0 1660.0)">banchi assemblaggio</text>
 <rect class="mach" x="890" y="1920" width="220" height="80"/><text class="ml" x="1000.0" y="1965.0" font-size="15">banco imballo</text>
-<rect class="stair" x="20" y="710" width="250" height="360"/>
-<line class="tread" x1="145.0" y1="710" x2="145.0" y2="1070"/>
-<line class="tread" x1="20" y1="750" x2="270" y2="750"/>
-<line class="tread" x1="20" y1="790" x2="270" y2="790"/>
-<line class="tread" x1="20" y1="830" x2="270" y2="830"/>
-<line class="tread" x1="20" y1="870" x2="270" y2="870"/>
-<line class="tread" x1="20" y1="910" x2="270" y2="910"/>
-<line class="tread" x1="20" y1="950" x2="270" y2="950"/>
-<line class="tread" x1="20" y1="990" x2="270" y2="990"/>
-<line class="tread" x1="20" y1="1030" x2="270" y2="1030"/>
+<rect class="stair" x="20" y="820" width="250" height="250"/>
+<line class="tread" x1="145.0" y1="820" x2="145.0" y2="1070"/>
+<line class="tread" x1="20" y1="860" x2="270" y2="860"/>
+<line class="tread" x1="20" y1="900" x2="270" y2="900"/>
+<line class="tread" x1="20" y1="940" x2="270" y2="940"/>
+<line class="tread" x1="20" y1="980" x2="270" y2="980"/>
+<line class="tread" x1="20" y1="1020" x2="270" y2="1020"/>
 <rect class="lab-bg" x="65.0" y="1024" width="160" height="30"/>
-<text class="ml" x="145.0" y="1045" font-size="16">↑ soppalco</text>
-<text class="al" x="1465.0" y="1610" font-size="26" transform="rotate(-90 1465.0 1610)">CORSIA MULETTI 3,90 m</text>
-<circle class="turn" cx="1465.0" cy="2000" r="190"/>
-<text class="al" x="1465.0" y="2005" font-size="18">manovra</text>
-<circle class="turn" cx="1465.0" cy="890" r="175"/>
-<path class="flow" d="M 1465.0 2350 L 1465.0 770"/>
-<path class="flow" d="M 1405.0 930.0 L 330 930.0"/>
-<text class="al" x="770.0" y="880.0" font-size="26">CORSIA MULETTI 3,60 m</text>
-<rect class="bridge" x="320" y="710" width="150" height="360"/>
+<text class="ml" x="145.0" y="1045" font-size="16">↑ mensa/mag.</text>
+<text class="al" x="1485.0" y="1610" font-size="26" transform="rotate(-90 1485.0 1610)">CORSIA MULETTI 3,50 m</text>
+<circle class="turn" cx="1485.0" cy="2000" r="190"/>
+<text class="al" x="1485.0" y="2005" font-size="18">manovra</text>
+<circle class="turn" cx="1485.0" cy="970" r="175"/>
+<path class="flow" d="M 1485.0 2350 L 1485.0 770"/>
+<path class="flow" d="M 1425.0 985.0 L 330 985.0"/>
+<text class="al" x="790.0" y="935.0" font-size="26">CORSIA TRANSPALLET 2,50 m</text>
 <text class="cl" x="395" y="1470" font-size="17" transform="rotate(-90 395 1470)">disimpegno</text>
-<text class="cl" x="395" y="780" font-size="15">passerella</text><text class="cl" x="395" y="800" font-size="15">sopra (h 3,0)</text>
+<line class="door" x1="1130" y1="820" x2="1240" y2="820"/>
+<line class="door" x1="1100" y1="620" x2="1100" y2="720"/>
 <line class="door" x1="1920" y1="710" x2="2040" y2="710"/>
-<line class="door" x1="970" y1="1070" x2="1150" y2="1070"/>
+<line class="door" x1="1660" y1="1580" x2="1660" y2="1700"/>
 <line class="door" x1="350" y1="1070" x2="450" y2="1070"/>
 <line class="door" x1="320" y1="1220" x2="320" y2="1310"/>
 <line class="door" x1="470" y1="1170" x2="470" y2="1260"/>
 <line class="door" x1="320" y1="1570" x2="320" y2="1660"/>
 <line class="door" x1="470" y1="1750" x2="470" y2="1840"/>
-<line class="door" x1="320" y1="1870" x2="420" y2="1870"/>
+<line class="door" x1="350" y1="1870" x2="450" y2="1870"/>
 <line class="door" x1="670" y1="1900" x2="760" y2="1900"/>
-<line class="doorw" x1="170" y1="710" x2="420" y2="710"/><text class="dw" x="295.0" y="746" font-size="18">2,50 m</text>
-<line class="doorw" x1="770" y1="710" x2="1070" y2="710"/><text class="dw" x="920.0" y="746" font-size="18">3,00 m</text>
-<line class="doorw" x1="1320" y1="710" x2="1620" y2="710"/><text class="dw" x="1470.0" y="746" font-size="18">3,00 m</text>
+<line class="doorw" x1="170" y1="820" x2="390" y2="820"/><text class="dw" x="280.0" y="856" font-size="18">2,20 m</text>
+<line class="doorw" x1="740" y1="820" x2="990" y2="820"/><text class="dw" x="865.0" y="856" font-size="18">2,50 m</text>
+<line class="doorw" x1="1340" y1="710" x2="1640" y2="710"/><text class="dw" x="1490.0" y="746" font-size="18">3,00 m</text>
 <line class="doorw" x1="1660" y1="780" x2="1660" y2="1030"/><text class="dw" x="1630" y="905.0" font-size="18" transform="rotate(-90 1630 905.0)">2,50 m</text>
-<line class="doorw" x1="1660" y1="1310" x2="1660" y2="1510"/><text class="dw" x="1630" y="1410.0" font-size="18" transform="rotate(-90 1630 1410.0)">2,00 m</text>
-<line class="doorw" x1="1660" y1="1720" x2="1660" y2="1970"/><text class="dw" x="1630" y="1845.0" font-size="18" transform="rotate(-90 1630 1845.0)">2,50 m</text>
-<line class="doorw" x1="1270" y1="1440" x2="1270" y2="1880"/>
-<line class="doorw" x1="1270" y1="1920" x2="1270" y2="2170"/>
+<line class="doorw" x1="1660" y1="1240" x2="1660" y2="1440"/><text class="dw" x="1630" y="1340.0" font-size="18" transform="rotate(-90 1630 1340.0)">2,00 m</text>
+<line class="doorw" x1="1660" y1="1920" x2="1660" y2="2140"/><text class="dw" x="1630" y="2030.0" font-size="18" transform="rotate(-90 1630 2030.0)">2,20 m</text>
+<line class="doorw" x1="1310" y1="1170" x2="1310" y2="1420"/>
+<line class="doorw" x1="1310" y1="1920" x2="1310" y2="2170"/>
 <line class="door ext" x1="10.0" y1="360" x2="10.0" y2="460"/>
 <line class="door ext" x1="2280.0" y1="400" x2="2280.0" y2="500"/>
 <line class="door ext" x1="2280.0" y1="700" x2="2280.0" y2="800"/>
 <line class="door ext" x1="1280" y1="2210.0" x2="1660" y2="2210.0"/>
 <line class="door ext" x1="200" y1="2210.0" x2="300" y2="2210.0"/>
 <line class="door ext" x1="670" y1="2210.0" x2="760" y2="2210.0"/>
-<line class="door ext" x1="2280.0" y1="1770" x2="2280.0" y2="1890"/>
+<line class="door ext" x1="2280.0" y1="1870" x2="2280.0" y2="1990"/>
 <text class="ext-s" x="1450" y="2290" font-size="18">portone 3,80 m</text>
 <line class="dim" x1="0" y1="2310" x2="2290" y2="2310"/>
 <line class="dim" x1="0" y1="2285" x2="0" y2="2335"/><line class="dim" x1="2290" y1="2285" x2="2290" y2="2335"/>
@@ -313,36 +317,30 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
   <div class="board" id="p-f" role="tabpanel" hidden>
     <svg viewBox="-220 -160 2560 2560" xmlns="http://www.w3.org/2000/svg" aria-label="Pianta primo piano e soppalco">
       <rect class="wall" x="0" y="0" width="2290" height="2220"/><rect class="inside" x="20" y="20" width="2250" height="2180"/>
-<rect class="ghost" x="1270" y="20" width="1000" height="690"/>
-<rect class="ghost" x="870" y="1070" width="400" height="350"/>
-<rect class="ghost" x="1660" y="710" width="610" height="500"/>
-<rect class="ghost" x="1660" y="1210" width="610" height="400"/>
-<rect class="ghost" x="1660" y="1610" width="610" height="590"/>
-<rect class="ghost" x="870" y="1420" width="400" height="480"/>
-<rect class="ghost" x="870" y="1900" width="400" height="300"/>
-<rect class="ghost" x="1270" y="710" width="390" height="1490"/>
-<rect class="ghost" x="270" y="710" width="1000" height="360"/>
-<text class="gl" x="1770" y="350" font-size="34">vuoto · doppia altezza 7 m</text>
-<text class="gl" x="1770" y="400" font-size="20">(sale SLS, post-processo, verniciatura, corsie, magazzino)</text>
-<text class="gl" x="820" y="900" font-size="20">corsia muletti trasversale (vuoto)</text>
+<rect class="ghost" x="1310" y="20" width="960" height="690"/>
+<rect class="ghost" x="1660" y="710" width="610" height="460"/>
+<rect class="ghost" x="1660" y="1170" width="610" height="350"/>
+<rect class="ghost" x="1660" y="1520" width="610" height="220"/>
+<rect class="ghost" x="1660" y="1740" width="610" height="460"/>
+<rect class="ghost" x="870" y="1070" width="440" height="830"/>
+<rect class="ghost" x="870" y="1900" width="440" height="300"/>
+<rect class="ghost" x="1310" y="710" width="350" height="1490"/>
+<text class="gl" x="1790" y="350" font-size="34">vuoto · doppia altezza 7 m</text>
+<text class="gl" x="1790" y="400" font-size="20">(SLS, post-processo, VC, verniciatura, finitura, corsia muletti)</text>
 <rect class="corr" x="320" y="1070" width="150" height="700"/>
-<rect class="mezz" x="20" y="20" width="1250" height="690"/>
-<rect class="room" x="20" y="20" width="600" height="420" style="fill:var(--c-fin)"/>
-<text class="rn" x="320.0" y="220.0" font-size="30">Assemblaggio · qualità</text>
-<text class="rs" x="320.0" y="252.0" font-size="19">banchi + metrologia</text>
-<text class="ra" x="320.0" y="278.0" font-size="20">25,2 m²</text>
-<rect class="room" x="620" y="20" width="650" height="420" style="fill:var(--c-fin)"/>
-<text class="rn" x="945.0" y="220.0" font-size="30">Finitura</text>
-<text class="rs" x="945.0" y="252.0" font-size="19">banchi aspirati</text>
-<text class="ra" x="945.0" y="278.0" font-size="20">27,3 m²</text>
-<rect class="room" x="720" y="440" width="550" height="270" style="fill:var(--c-fin)"/>
-<text class="rn" x="995.0" y="565.0" font-size="24">Area VC</text>
-<text class="rs" x="995.0" y="597.0" font-size="19">colata sottovuoto</text>
-<text class="ra" x="995.0" y="623.0" font-size="20">14,8 m²</text>
-<rect class="room" x="20" y="440" width="700" height="270" style="fill:var(--c-log)"/>
-<text class="rn" x="370.0" y="565.0" font-size="24">Sbarco soppalco</text>
-<text class="rs" x="370.0" y="597.0" font-size="19">scala · passerella · cancello pallet</text>
-<text class="ra" x="370.0" y="623.0" font-size="20">18,9 m²</text>
+<rect class="corr" x="320" y="620" width="150" height="450"/>
+<rect class="mezz" x="20" y="20" width="1290" height="1050"/>
+<rect class="room" x="20" y="20" width="450" height="600" style="fill:var(--c-serv)"/>
+<text class="rn" x="245.0" y="310.0" font-size="30">Mensa / relax</text>
+<text class="rs" x="245.0" y="342.0" font-size="19">finestre sul muro ovest</text>
+<text class="ra" x="245.0" y="368.0" font-size="20">27,0 m²</text>
+<rect class="room" x="470" y="20" width="840" height="1050" style="fill:var(--c-log)"/>
+<text class="rn" x="800" y="265" font-size="30">Magazzino</text>
+<text class="rs" x="800" y="297" font-size="19">scaffali · bancali · consumabili</text>
+<text class="ra" x="800" y="323" font-size="20">88,2 m²</text>
+<rect class="room" x="20" y="620" width="300" height="200" style="fill:var(--c-tec)"/>
+<text class="rn" x="170.0" y="720.0" font-size="24">UTA clima</text>
+<text class="ra" x="170.0" y="746.0" font-size="20">6,0 m²</text>
 <rect class="room" x="20" y="1070" width="300" height="350" style="fill:var(--c-uff)"/>
 <text class="rn" x="170.0" y="1245.0" font-size="30">Commerciale 1</text>
 <text class="ra" x="170.0" y="1271.0" font-size="20">10,5 m²</text>
@@ -364,24 +362,24 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
 <rect class="room" x="470" y="1870" width="400" height="330" style="fill:var(--c-uff)"/>
 <text class="rn" x="670.0" y="2035.0" font-size="30">Sala riunioni 2</text>
 <text class="ra" x="670.0" y="2061.0" font-size="20">13,2 m²</text>
-<line class="door ext" x1="500" y1="710" x2="700" y2="710"/>
-<text class="dw" x="600" y="745" font-size="17">cancello pallet</text>
-<rect class="stair" x="20" y="710" width="250" height="360"/>
-<line class="tread" x1="145.0" y1="710" x2="145.0" y2="1070"/>
-<line class="tread" x1="20" y1="750" x2="270" y2="750"/>
-<line class="tread" x1="20" y1="790" x2="270" y2="790"/>
-<line class="tread" x1="20" y1="830" x2="270" y2="830"/>
-<line class="tread" x1="20" y1="870" x2="270" y2="870"/>
-<line class="tread" x1="20" y1="910" x2="270" y2="910"/>
-<line class="tread" x1="20" y1="950" x2="270" y2="950"/>
-<line class="tread" x1="20" y1="990" x2="270" y2="990"/>
-<line class="tread" x1="20" y1="1030" x2="270" y2="1030"/>
+<line class="door ext" x1="1310" y1="740" x2="1310" y2="1000"/>
+<text class="dw" x="1360" y="870" font-size="17" transform="rotate(-90 1360 870)">cancello pallet</text>
+<rect class="stair" x="20" y="820" width="250" height="250"/>
+<line class="tread" x1="145.0" y1="820" x2="145.0" y2="1070"/>
+<line class="tread" x1="20" y1="860" x2="270" y2="860"/>
+<line class="tread" x1="20" y1="900" x2="270" y2="900"/>
+<line class="tread" x1="20" y1="940" x2="270" y2="940"/>
+<line class="tread" x1="20" y1="980" x2="270" y2="980"/>
+<line class="tread" x1="20" y1="1020" x2="270" y2="1020"/>
 <rect class="lab-bg" x="65.0" y="1024" width="160" height="30"/>
 <text class="ml" x="145.0" y="1045" font-size="16">↓ piano terra</text>
-<rect class="bridge1" x="320" y="710" width="150" height="360"/>
-<text class="cl" x="395" y="890" font-size="17" transform="rotate(-90 395 890)">passerella</text>
+<text class="cl" x="395" y="850" font-size="17" transform="rotate(-90 395 850)">corridoio</text>
 <text class="cl" x="395" y="1420" font-size="17" transform="rotate(-90 395 1420)">corridoio</text>
-<text class="mz" x="40" y="-20" font-size="24">SOPPALCO in acciaio +3,30 m · 86 m² (sopra sale FDM e SLA) + passerella verso uffici</text>
+<rect class="mach" x="520" y="80" width="560" height="100"/><text class="ml" x="800" y="136" font-size="16">scaffalatura</text>
+<rect class="mach" x="520" y="380" width="560" height="100"/><text class="ml" x="800" y="436" font-size="16">scaffalatura</text>
+<rect class="mach" x="520" y="680" width="560" height="100"/><text class="ml" x="800" y="736" font-size="16">scaffalatura</text>
+<rect class="zone" x="1090" y="720" width="210" height="300"/><text class="ml" x="1195" y="1050" font-size="15">sosta bancali</text>
+<text class="mz" x="40" y="-20" font-size="24">SOPPALCO +3,30 m · 135 m² · solo magazzino e mensa, nessuna lavorazione</text>
 <text class="mz" x="40" y="2270" font-size="24">PRIMO PIANO uffici +3,30 m (blocco esistente)</text>
 <line class="door" x1="320" y1="1220" x2="320" y2="1310"/>
 <line class="door" x1="320" y1="1520" x2="320" y2="1610"/>
@@ -390,9 +388,9 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
 <line class="door" x1="470" y1="1970" x2="470" y2="2060"/>
 <line class="door" x1="370" y1="1770" x2="460" y2="1770"/>
 <line class="door" x1="350" y1="1070" x2="450" y2="1070"/>
-<line class="door" x1="220" y1="440" x2="320" y2="440"/>
-<line class="door" x1="820" y1="440" x2="920" y2="440"/>
-<line class="door" x1="720" y1="540" x2="720" y2="640"/>
+<line class="door" x1="350" y1="620" x2="450" y2="620"/>
+<line class="door" x1="470" y1="720" x2="470" y2="870"/>
+<line class="door" x1="320" y1="670" x2="320" y2="760"/>
 <line class="dim" x1="0" y1="2310" x2="2290" y2="2310"/>
 <line class="dim" x1="0" y1="2285" x2="0" y2="2335"/><line class="dim" x1="2290" y1="2285" x2="2290" y2="2335"/>
 <text class="dt" x="1145.0" y="2296" font-size="26">22,90 m (esterno)</text>
@@ -404,74 +402,73 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
 
   <div class="legend">
     <span><i class="sw" style="background:var(--c-clima)"></i>Sale chiuse climatizzate</span>
-    <span><i class="sw" style="background:var(--c-proc)"></i>Post-processo · verniciatura</span>
-    <span><i class="sw" style="background:var(--c-fin)"></i>Finitura · qualità · VC (soppalco)</span>
+    <span><i class="sw" style="background:var(--c-proc)"></i>Post-processo · VC · verniciatura</span>
+    <span><i class="sw" style="background:var(--c-fin)"></i>Finitura · qualità</span>
     <span><i class="sw" style="background:var(--c-log)"></i>Logistica</span>
     <span><i class="sw" style="background:var(--c-uff)"></i>Uffici</span>
     <span><i class="sw" style="background:var(--c-serv)"></i>Servizi</span>
     <span><i class="sw" style="background:var(--c-tec)"></i>Tecnico</span>
-    <span><i class="sw" style="background:var(--aisle);border-color:var(--accent)"></i>Corsie muletti</span>
+    <span><i class="sw" style="background:var(--aisle);border-color:var(--accent)"></i>Corsie muletto e transpallet</span>
     <span><i class="sw" style="background:transparent;border:2px dashed var(--accent)"></i>Zona di posa macchina</span>
-    <span><i class="sw" style="background:var(--accent);border-color:var(--accent)"></i>Portoni muletto · porte esterne · wallbox</span>
+    <span><i class="sw" style="background:var(--accent);border-color:var(--accent)"></i>Portoni macchine · porte esterne · cancello pallet · wallbox</span>
   </div>
 
   <section>
-    <h2>Accesso delle macchine con il muletto</h2>
-    <p>Ogni sala macchine ha un portone sulla corsia e, subito dietro, una zona di posa sgombra dove il muletto appoggia la macchina. Il posizionamento finale contro la parete si fa con carrelli o rulli da trasloco industriale.</p>
+    <h2>Accesso delle macchine</h2>
+    <p>FDM, SLA e lavaggio si affacciano su una corsia per transpallet da 2,50 m. La macchina arriva sul bancale fino alla corsia, gira di 90° ed entra dal portone in una zona di posa sgombra; da lì si porta in posizione con carrelli o rulli. SLS, pulizia SLS e verniciatura stanno sulla corsia principale, dove lavora il muletto.</p>
     <div class="tbl"><table>
-      <thead><tr><th>Sala</th><th>Corsia</th><th class="num">Portone</th><th class="num">Zona di posa</th><th>Macchina più grande</th></tr></thead>
+      <thead><tr><th>Sala</th><th>Mezzo · corsia</th><th class="num">Portone</th><th class="num">Zona di posa</th><th>Macchina più grande</th></tr></thead>
       <tbody>
-        <tr><td>Sala FDM</td><td>trasversale 3,60 m</td><td class="num">2,50 m</td><td class="num">3,3 × 5,5 m</td><td>Fortus 450mc · 1,30 × 0,90 m · ≈ 690 kg imballata</td></tr>
-        <tr><td>Sala SLA</td><td>trasversale 3,60 m</td><td class="num">3,00 m</td><td class="num">5,6 × 4,3 m</td><td>Neo800 · 1,35 × 1,63 m · 800 kg + vasca a parte</td></tr>
-        <tr><td>Sala SLS</td><td>incrocio delle corsie</td><td class="num">3,00 m</td><td class="num">4,0 × 3,5 m</td><td>HT403P · 2,47 × 1,50 m · 3 t, entra dal lato corto</td></tr>
-        <tr><td>Pulizia SLS</td><td>principale 3,90 m</td><td class="num">2,50 m</td><td class="num">—</td><td>PMS · 3,25 × 1,61 m · 1,5 t, entra dal lato corto</td></tr>
-        <tr><td>Buratto · soda · vapor</td><td>principale 3,90 m</td><td class="num">2,00 m</td><td class="num">—</td><td>vapor smoothing ≈ 1,7 × 1,1 m</td></tr>
-        <tr><td>Verniciatura</td><td>principale 3,90 m</td><td class="num">2,50 m</td><td class="num">—</td><td>cabina fornita a pannelli</td></tr>
+        <tr><td>Sala FDM</td><td>transpallet · 2,50 m</td><td class="num">2,20 m</td><td class="num">3,3 × 6,6 m</td><td>Fortus 450mc · 1,30 × 0,90 m · ≈ 690 kg imballata</td></tr>
+        <tr><td>Sala SLA</td><td>transpallet · 2,50 m</td><td class="num">2,50 m</td><td class="num">4,1 × 5,4 m</td><td>Neo800 · 1,35 × 1,63 m · 800 kg + vasca a parte</td></tr>
+        <tr><td>Lavaggio SLA</td><td>transpallet · 2,50 m</td><td class="num">1,10 m</td><td class="num">—</td><td>vasche IPA e forno UV, da banco o su ruote</td></tr>
+        <tr><td>Sala SLS</td><td>muletto · 3,50 m</td><td class="num">3,00 m</td><td class="num">4,0 × 3,5 m</td><td>HT403P · 2,47 × 1,50 m · 3 t, entra dal lato corto</td></tr>
+        <tr><td>Pulizia SLS</td><td>muletto · 3,50 m</td><td class="num">2,50 m</td><td class="num">—</td><td>PMS · 3,25 × 1,61 m · 1,5 t, entra dal lato corto</td></tr>
+        <tr><td>Buratto · soda · vapor</td><td>muletto · 3,50 m</td><td class="num">2,00 m</td><td class="num">—</td><td>vapor smoothing ≈ 1,7 × 1,1 m</td></tr>
+        <tr><td>Verniciatura</td><td>muletto · 3,50 m</td><td class="num">2,20 m</td><td class="num">—</td><td>cabina fornita a pannelli</td></tr>
       </tbody>
     </table></div>
-    <p class="note">Le sale FDM e SLA stanno sotto il soppalco e hanno 3,00 m liberi. I portoni vanno alti almeno 2,70 m. Serve un muletto con montante chiuso alto al massimo 2,20 m, perché la Neo800 da sola è alta 2,30 m: si porta bassa sulle forche, a montante chiuso. In alternativa, la Neo800 si consegna con la vasca smontata.</p>
+    <p class="note">FDM, SLA, lavaggio e la corsia transpallet stanno sotto il soppalco: restano 3,00 m liberi e i portoni vanno alti almeno 2,60 m. La Neo800 è alta 2,30 m e passa sul bancale col transpallet. Il muletto non entra mai sotto il soppalco: lavora solo sulla corsia principale, che è a doppia altezza.</p>
   </section>
 
   <div class="grid2">
     <section>
-      <h2>Cosa è cambiato rispetto alla rev. A</h2>
+      <h2>Cosa è cambiato rispetto alla rev. B</h2>
       <ul>
-        <li><b>Corsia trasversale da 3,60 m</b> al posto del corridoio pedonale da 1,30 m. Parte dalla corsia principale e arriva fino alla sala FDM. All'incrocio c'è un cerchio di manovra di Ø 3,5 m.</li>
-        <li><b>FDM e SLA affiancate</b> lungo il muro nord, con le macchine contro le pareti e il centro libero. Prima erano una dietro l'altra e si raggiungevano solo da un corridoio di 1,2 m.</li>
-        <li><b>Il lavaggio SLA</b> è passato davanti alla sala SLA, dall'altra parte della corsia, a 4 m di distanza.</li>
-        <li><b>Il deposito chimici non è più una stanza.</b> IPA e resine vanno in armadi di sicurezza EN 14470-1, nel lavaggio e in verniciatura. Le polveri restano nella sala pulizia SLS.</li>
-        <li><b>Soppalco ridotto a 86 m²</b>, solo sopra FDM e SLA. Si raggiunge dagli uffici con una passerella sopra la corsia (3,0 m liberi sotto) e da una scala a due rampe in fondo alla corsia. Il cancello pallet si affaccia sulla corsia trasversale.</li>
-        <li><b>Le unità di climatizzazione</b> vanno all'esterno, sul lato est o in copertura. Sul soppalco non c'era più posto.</li>
+        <li><b>Nessuna lavorazione sul soppalco.</b> Finitura e assemblaggio scendono accanto alla corsia principale, con banchi aspirati e un portone sulla corsia. La VC va tra buratto e verniciatura. La qualità prende il posto della mensa negli uffici a piano terra, vicino all'ingresso, così si può mostrare un collaudo al cliente.</li>
+        <li><b>Il soppalco tiene solo magazzino e mensa.</b> Il magazzino, 88 m² con scaffalature e sosta bancali, si carica dal cancello pallet sul bordo est col muletto fermo in corsia. La mensa ha finestre sul muro ovest. Dagli uffici del primo piano ci si arriva in piano, senza passerella.</li>
+        <li><b>Corsia trasversale ridotta</b> da 3,60 a 2,50 m, per il transpallet. Lo spazio recuperato va alle sale FDM e SLA, ora profonde 8,0 m, e al lavaggio SLA, che torna attaccato alla sala SLA con una porta interna.</li>
+        <li><b>Corsia muletti</b> da 3,90 a 3,50 m. È il minimo per un frontale elettrico 1,5–2 t con bancale 800 × 1200.</li>
       </ul>
     </section>
     <section>
       <h2>Superfici</h2>
       <div class="tbl"><table>
         <thead><tr><th>Locale</th><th class="num">m × m</th><th class="num">m²</th></tr></thead>
-        <tbody><tr class="grp"><th colspan="2">Produzione chiusa e climatizzata</th><td class="num">199,8</td></tr>
-<tr><td><span class="sw" style="background:var(--c-clima)"></span>Sala FDM</td><td class="num">5,60 × 6,90</td><td class="num">38,6</td></tr>
-<tr><td><span class="sw" style="background:var(--c-clima)"></span>Sala SLA</td><td class="num">6,90 × 6,90</td><td class="num">47,6</td></tr>
-<tr><td><span class="sw" style="background:var(--c-clima)"></span>Sala SLS</td><td class="num">10,00 × 6,90</td><td class="num">69,0</td></tr>
-<tr><td><span class="sw" style="background:var(--c-clima)"></span>Lavaggio SLA</td><td class="num">4,00 × 3,50</td><td class="num">14,0</td></tr>
-<tr><td><span class="sw" style="background:var(--c-clima)"></span>Pulizia SLS</td><td class="num">6,10 × 5,00</td><td class="num">30,5</td></tr>
-<tr class="grp"><th colspan="2">Post-processo e verniciatura</th><td class="num">60,4</td></tr>
-<tr><td><span class="sw" style="background:var(--c-proc)"></span>Buratto · soda · vapor</td><td class="num">6,10 × 4,00</td><td class="num">24,4</td></tr>
-<tr><td><span class="sw" style="background:var(--c-proc)"></span>Verniciatura</td><td class="num">6,10 × 5,90</td><td class="num">36,0</td></tr>
-<tr class="grp"><th colspan="2">Soppalco +3,30</th><td class="num">86,2</td></tr>
-<tr><td><span class="sw" style="background:var(--c-fin)"></span>Assemblaggio · qualità</td><td class="num">6,00 × 4,20</td><td class="num">25,2</td></tr>
-<tr><td><span class="sw" style="background:var(--c-fin)"></span>Finitura</td><td class="num">6,50 × 4,20</td><td class="num">27,3</td></tr>
-<tr><td><span class="sw" style="background:var(--c-fin)"></span>Area VC</td><td class="num">5,50 × 2,70</td><td class="num">14,8</td></tr>
-<tr><td><span class="sw" style="background:var(--c-log)"></span>Sbarco soppalco</td><td class="num">7,00 × 2,70</td><td class="num">18,9</td></tr>
-<tr class="grp"><th colspan="2">Logistica piano terra</th><td class="num">31,2</td></tr>
-<tr><td><span class="sw" style="background:var(--c-log)"></span>Magazzino</td><td class="num">4,00 × 4,80</td><td class="num">19,2</td></tr>
-<tr><td><span class="sw" style="background:var(--c-log)"></span>Imballo e spedizioni</td><td class="num">4,00 × 3,00</td><td class="num">12,0</td></tr>
-<tr class="grp"><th colspan="2">Uffici e servizi piano terra</th><td class="num">72,0</td></tr>
+        <tbody><tr class="grp"><th colspan="2">Stampa e lavaggio, sale climatizzate</th><td class="num">197,5</td></tr>
+<tr><td><span class="sw" style="background:var(--c-clima)"></span>Sala FDM</td><td class="num">5,60 × 8,00</td><td class="num">44,8</td></tr>
+<tr><td><span class="sw" style="background:var(--c-clima)"></span>Sala SLA</td><td class="num">5,20 × 8,00</td><td class="num">41,6</td></tr>
+<tr><td><span class="sw" style="background:var(--c-clima)"></span>Lavaggio SLA</td><td class="num">2,10 × 8,00</td><td class="num">16,8</td></tr>
+<tr><td><span class="sw" style="background:var(--c-clima)"></span>Sala SLS</td><td class="num">9,60 × 6,90</td><td class="num">66,2</td></tr>
+<tr><td><span class="sw" style="background:var(--c-clima)"></span>Pulizia SLS</td><td class="num">6,10 × 4,60</td><td class="num">28,1</td></tr>
+<tr class="grp"><th colspan="2">Post-processo, VC, verniciatura</th><td class="num">62,8</td></tr>
+<tr><td><span class="sw" style="background:var(--c-proc)"></span>Buratto · soda · vapor</td><td class="num">6,10 × 3,50</td><td class="num">21,4</td></tr>
+<tr><td><span class="sw" style="background:var(--c-proc)"></span>Area VC</td><td class="num">6,10 × 2,20</td><td class="num">13,4</td></tr>
+<tr><td><span class="sw" style="background:var(--c-proc)"></span>Verniciatura</td><td class="num">6,10 × 4,60</td><td class="num">28,1</td></tr>
+<tr class="grp"><th colspan="2">Finitura, qualità, spedizioni</th><td class="num">61,7</td></tr>
+<tr><td><span class="sw" style="background:var(--c-fin)"></span>Finitura</td><td class="num">4,40 × 8,30</td><td class="num">36,5</td></tr>
+<tr><td><span class="sw" style="background:var(--c-log)"></span>Imballo e spedizioni</td><td class="num">4,40 × 3,00</td><td class="num">13,2</td></tr>
+<tr><td><span class="sw" style="background:var(--c-fin)"></span>Qualità</td><td class="num">3,00 × 4,00</td><td class="num">12,0</td></tr>
+<tr class="grp"><th colspan="2">Uffici e servizi piano terra</th><td class="num">60,0</td></tr>
 <tr><td><span class="sw" style="background:var(--c-serv)"></span>Spogliatoio</td><td class="num">3,00 × 4,00</td><td class="num">12,0</td></tr>
-<tr><td><span class="sw" style="background:var(--c-serv)"></span>Mensa / relax</td><td class="num">3,00 × 4,00</td><td class="num">12,0</td></tr>
 <tr><td><span class="sw" style="background:var(--c-serv)"></span>Bagno operai</td><td class="num">4,00 × 3,30</td><td class="num">13,2</td></tr>
 <tr><td><span class="sw" style="background:var(--c-serv)"></span>Bagno clienti</td><td class="num">4,00 × 2,00</td><td class="num">8,0</td></tr>
 <tr><td><span class="sw" style="background:var(--c-uff)"></span>Ingresso / attesa</td><td class="num">4,50 × 3,30</td><td class="num">14,8</td></tr>
 <tr><td><span class="sw" style="background:var(--c-tec)"></span>Locale tecnico</td><td class="num">4,00 × 3,00</td><td class="num">12,0</td></tr>
+<tr class="grp"><th colspan="2">Soppalco +3,30 (magazzino e mensa)</th><td class="num">121,2</td></tr>
+<tr><td><span class="sw" style="background:var(--c-serv)"></span>Mensa / relax</td><td class="num">4,50 × 6,00</td><td class="num">27,0</td></tr>
+<tr><td><span class="sw" style="background:var(--c-log)"></span>Magazzino</td><td class="num">8,40 × 10,50</td><td class="num">88,2</td></tr>
+<tr><td><span class="sw" style="background:var(--c-tec)"></span>UTA clima</td><td class="num">3,00 × 2,00</td><td class="num">6,0</td></tr>
 <tr class="grp"><th colspan="2">Uffici primo piano</th><td class="num">73,5</td></tr>
 <tr><td><span class="sw" style="background:var(--c-uff)"></span>Commerciale 1</td><td class="num">3,00 × 3,50</td><td class="num">10,5</td></tr>
 <tr><td><span class="sw" style="background:var(--c-uff)"></span>Commerciale 2</td><td class="num">3,00 × 3,50</td><td class="num">10,5</td></tr>
@@ -480,27 +477,27 @@ tr.grp th,tr.grp td{background:var(--c-corr);font-family:var(--f-disp);font-size
 <tr><td><span class="sw" style="background:var(--c-serv)"></span>Bagno direzione</td><td class="num">4,00 × 1,70</td><td class="num">6,8</td></tr>
 <tr><td><span class="sw" style="background:var(--c-uff)"></span>Sala riunioni 2</td><td class="num">4,00 × 3,30</td><td class="num">13,2</td></tr></tbody>
       </table></div>
-      <p class="small">Corsie muletti 94 m², corridoi esclusi. Misure nette indicative, senza spessore dei tramezzi.</p>
+      <p class="small">Corsie 78 m², corridoi esclusi. Misure nette indicative, senza spessore dei tramezzi.</p>
     </section>
   </div>
 
   <div class="grid2">
     <section>
-      <h2>Il prezzo delle corsie larghe</h2>
-      <p>Le due corsie occupano circa 94 m², quasi un quinto del capannone. Per recuperarli ho tolto il deposito chimici come stanza, spostato il lavaggio SLA e tolto dal soppalco consumabili e UTA. Il magazzino scende a circa 19 m² più il porta-pallet sulla corsia. I consumabili leggeri, come filamenti e ricambi, vanno su scaffali dentro le sale FDM e SLA, vicino a dove si usano.</p>
-      <p class="note"><b>Stima di massima per il soppalco</b> da 86 m², passerella e scala a due rampe: 25.000–45.000 €. L'eventuale protezione al fuoco è esclusa. È una forbice mia, non un preventivo: va chiesta a 2–3 carpenterie.</p>
-      <h3>Pedoni e muletti</h3>
-      <p>Il personale esce dagli uffici direttamente sulla corsia trasversale. Servono strisce pedonali a terra, specchi all'incrocio e il limite di velocità per il muletto. Il percorso pedonale verso la sala FDM corre lungo il lato sud della corsia.</p>
+      <h2>Si può fare senza nessun soppalco?</h2>
+      <p>Il laboratorio sì: con questa disposizione tutte le lavorazioni stanno a piano terra. Magazzino e mensa no. Mancano circa 110 m² e il blocco uffici su due piani è già pieno con uffici, riunioni, bagni e spogliatoio. Per eliminare del tutto il soppalco dovresti rinunciare al magazzino interno, per esempio usando un container sul piazzale, e portare la mensa al posto di una sala riunioni.</p>
+      <p class="note"><b>Stima di massima per il soppalco</b> da 135 m² con portata 600 kg/m² per il magazzino, scala, parapetti e cancello pallet: 40.000–65.000 €. L'eventuale protezione al fuoco è esclusa. È una forbice mia, non un preventivo: va chiesta a 2–3 carpenterie. Il soppalco fa anche da soffitto alle sale clima sotto, che altrimenti andrebbero controsoffittate comunque.</p>
+      <h3>Pedoni e mezzi</h3>
+      <p>Il personale entra in laboratorio dallo spogliatoio e passa sulla corsia transpallet, dove non circola il muletto. Il muletto resta sulla corsia principale. All'incrocio delle due corsie servono strisce a terra e uno specchio.</p>
     </section>
     <section>
       <h2>Da verificare prima del progetto esecutivo</h2>
       <ul>
         <li><b>Profondità reale.</b> L'ho ricavata dalla scala grafica della pianta originale: ≈ 22,2 m esterni, coerente con i 420 m² dell'annuncio come superficie dell'open space. Prima di procedere va misurata sul posto.</li>
-        <li><b>Muletto.</b> Servono portata e baricentro adatti alle casse più pesanti, cioè le HT403P da 3 t, e un montante chiuso alto al massimo 2,20 m per passare sotto soppalco e passerella. Per le HT403P conviene comunque un trasportatore specializzato.</li>
+        <li><b>Transpallet sotto carico.</b> Fortus e Neo800 pesano 600–800 kg: va bene un transpallet manuale da 2 t, meglio uno elettrico. Le HT403P da 3 t le installa comunque il trasportatore specializzato.</li>
+        <li><b>Carico del soppalco.</b> Per un magazzino serve una portata di almeno 600 kg/m²; con bancali di polveri o resine si sale. Va dimensionato su cosa ci metti davvero.</li>
         <li><b>Carico del pavimento.</b> HT403P ≈ 3,0 t ciascuna su 3,7 m², PMS 1,5 t, Neo800 ≈ 1 t con la vasca: serve una verifica della platea.</li>
         <li><b>Potenza elettrica.</b> L'installato è nell'ordine di 180–200 kW. Va confrontato con il contatore disponibile e con l'impianto FV e le batterie.</li>
-        <li><b>Azoto e aria.</b> HT403P e P1000 vogliono N₂; la PMS chiede 670 L/min a 5–7 bar. Generatori e compressori stanno sotto la tettoia est.</li>
-        <li><b>ATEX e antincendio.</b> Le polveri di poliammide, l'IPA e le vernici richiedono la valutazione ATEX e probabilmente la pratica di prevenzione incendi con i VVF.</li>
+        <li><b>ATEX e antincendio.</b> Le polveri di poliammide, l'IPA e le vernici richiedono la valutazione ATEX e probabilmente la pratica di prevenzione incendi con i VVF. Resine e IPA vanno in armadi EN 14470-1, non nel magazzino sul soppalco.</li>
       </ul>
     </section>
   </div>
